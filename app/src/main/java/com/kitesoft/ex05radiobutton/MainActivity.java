@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         ratingBar= findViewById(R.id.rating);
         ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
 
+            //2번째 파라미터 : 사용자가 터치를 이용해서 설정된 rating 값 (소수점 존재함. float형)
             //3번째 파라미터 : 사용자가 터치를 이용해서 점수를 변경했는지 여부
             @Override
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean byUser) {
